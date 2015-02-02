@@ -1,1 +1,9 @@
-This repo is a binary package for node-canvas. It contains both the Win32 and Darwin binaries for node-canvas.
+NodeCanvasBin
+
+NodeCanvasBin is a binary distribution of node-canvas.
+This repository only contains the Javascript parts of node-canvas.
+On install, the package will check the platform and install the version of the binary files
+for your platform and architecture.
+
+Currently supported are Win32, OS X, Linux 32bit and Linux 64bit.
+The libraries themselves are contained in the node-canvas-bin-libs repository.
