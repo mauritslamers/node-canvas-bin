@@ -5,7 +5,7 @@ var cp = require('child_process');
 var platform = os.platform();
 var arch = os.arch();
 
-if (["linux", "osx", "win32"].indexOf(platform) === -1) {
+if (["linux", "darwin", "win32"].indexOf(platform) === -1) {
   throw new Error("We didn't recognize the platform you are on and consequently cannot install the right binary files!");
 }
 
@@ -18,6 +18,9 @@ util.log("NodeCanvasBin: Installing precompiled binaries for " + platform + "/" 
 var baseUrl = "git://github.com/mauritslamers/node-canvas-bin-libs#";
 if (platform === "linux") {
   baseUrl += ((arch === "x64") ? "linux-x86_64" : "linux-ia32");
+}
+else if (platform === "darwin") {
+  baseUrl += "osx";
 }
 else baseUrl += platform;
 
