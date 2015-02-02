@@ -22,10 +22,9 @@ if (platform === "linux") {
 else baseUrl += platform;
 
 var proc = cp.spawn("npm", ["install", baseUrl]);
-  proc.stdout.on('data', function (d) {
-    console.log(d.toString());
-  });
-  proc.stderr.on('data', function (d) {
-    console.log(d.toString());
-  });
-};
+proc.stdout.on('data', function (d) {
+  console.log(d.toString());
+});
+proc.stderr.on('data', function (d) {
+  console.log(d.toString());
+});
