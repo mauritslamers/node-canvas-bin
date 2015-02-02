@@ -1,0 +1,31 @@
+{
+  "name": "canvas-bin",
+  "description": "Canvas graphics API backed by Cairo (binary)",
+  "version": "1.1.6",
+  "author": "TJ Holowaychuk <tj@learnboost.com>",
+  "contributors": [
+    "Nathan Rajlich <nathan@tootallnate.net>",
+    "Rod Vagg <r@va.gg>",
+    "Juriy Zaytsev <kangax@gmail.com>",
+    "Maurits Lamers <maurits@weidestraat.nl>"
+  ],
+  "keywords": [
+    "canvas",
+    "graphic",
+    "graphics",
+    "pixman",
+    "cairo",
+    "image",
+    "images",
+    "pdf"
+  ],
+  "homepage": "https://github.com/learnboost/node-canvas",
+  "repository": "git://github.com/learnboost/node-canvas",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "install": "node post_install.js"
+  }
+}
