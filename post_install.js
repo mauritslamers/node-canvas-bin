@@ -17,7 +17,7 @@ util.log("NodeCanvasBin: Installing precompiled binaries for " + platform + "/" 
 
 var baseUrl = "git://github.com/mauritslamers/node-canvas-bin-libs#";
 if (platform === "linux") {
-  baseUrl += ((arch === "x64") ? "linux-x86_64" : "linux-ia32";
+  baseUrl += ((arch === "x64") ? "linux-x86_64" : "linux-ia32");
 }
 else baseUrl += platform;
 
@@ -28,4 +28,4 @@ var proc = cp.spawn("npm", ["install", baseUrl]);
   proc.stderr.on('data', function (d) {
     console.log(d.toString());
   });
-}
+};
