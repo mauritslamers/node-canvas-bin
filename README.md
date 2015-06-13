@@ -1,4 +1,4 @@
-NodeCanvasBin
+### NodeCanvasBin
 
 NodeCanvasBin is a binary distribution of node-canvas.
 This repository only contains the Javascript parts of node-canvas.
