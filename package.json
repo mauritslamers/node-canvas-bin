@@ -19,10 +19,10 @@
     "images",
     "pdf"
   ],
-  "homepage": "https://github.com/learnboost/node-canvas",
-  "repository": "git://github.com/learnboost/node-canvas",
+  "homepage": "https://github.com/Automattic/node-canvas",
+  "repository": "git://github.com/Automattic/node-canvas",
   "engines": {
     "node": ">= 0.8.0"
   },
-  "main": "./index.js",
+  "main": "./index.js"
 }
